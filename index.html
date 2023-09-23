@@ -40,7 +40,6 @@
           <li><p class=".text-danger">/</p></li>
          </ol>
       </div>
-      
       <div class="container-fluid text-center " >
         <div class="container d-md-flex justify-content-center align-items-center p-5">
           <div class="flex-1 border border-light rounded-3 m-lg-5 mb-3 p-2" >
@@ -48,11 +47,26 @@
             <p class="text-white text-decoration-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, dolore soluta. Quis harum asperiores praesentium veritatis labore libero assumenda unde adipisci</p>
             </a>
           </div>
-          <div class="flex-2 border border-light rounded-3 m-lg-5 mb-3 p-2">
-            <a class="text-white text-decoration-none" href="./medium/em.html"><h3 class="text-warning">ENGLISH Medium</h3>
+          <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel">Choose type of Sylabus</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-footer d-flex justify-content-center">
+                  <a href="./SSC/ssc.html"><button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">State Sylabus</button></a>
+                  <a href="./CBSC/cbsc.html"><button class="btn btn-primary" href="./CBSC/cbsc.ntml" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Central Sylabus</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a> -->
+          <a class="text-white text-decoration-none btn border border-light" data-bs-toggle="modal" href="#exampleModalToggle"><h3 class="text-warning">ENGLISH Medium</h3>
             <p class="text-white text-decoration-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, dolore soluta. Quis harum asperiores praesentium veritatis labore libero assumenda unde adipisci</p>
             </a>
-          </div>
         </div>
       </div>
     </div>
