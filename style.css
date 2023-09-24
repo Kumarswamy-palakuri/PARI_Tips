@@ -1,0 +1,5 @@
+@media (max-width: 390px) {
+  .custom-padding {
+      margin: 30px; /* Adjust the padding value as needed */
+  }
+}
