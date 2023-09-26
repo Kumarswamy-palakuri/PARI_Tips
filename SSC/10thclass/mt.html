@@ -7,9 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="bootstrap-5.0.2-dist\bootstrap-5.0.2-dist\css\bootstrap-grid.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+      .hidden {
+          display: none;
+      }
+  </style>
   </head>
   <body>
-    <div class="container-fuild bg-dark math-height">
+    <div class="container-fuild bg-dark">
       <nav class="navbar navbar-expand-md bg-secondary ">
         <div class="container bg-secondary p-1">
           <a class="navbar-brand" href="../index.html"><span class="text-primary">PARI</span>Tips</a>
@@ -61,41 +66,354 @@
          <div class="row d-md-flex">
           <div class="col-md-2 d-flex flex-md-column flex-nowrap overflow-scroll ">
             <!-- <div id="list-example" class="list-group"> -->
+              <button type="button" id="All" class="btn btn-primary my-md-2 m-2" style="min-width: 100px;"><a class="list-group-item list-group-item-action" href="#list-item-1">Textbook</a></button>
               <!-- <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a> -->
-              <button type="button" class="btn btn-primary my-md-2 m-2" style="min-width: 100px;"><a class="list-group-item list-group-item-action" href="#list-item-1">Chapter 1</a></button>
+              <button type="button" id="chapter1" class="btn btn-primary my-md-2 m-2" style="min-width: 100px;"><a class="list-group-item list-group-item-action" href="#list-item-1">Chapter 1</a></button>
               <!-- <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a> -->
-              <button type="button" class="btn btn-primary my-md-2 m-2"style="min-width: 100px;"><a class="list-group-item list-group-item-action" href="#list-item-2">Chapter 2</a></button>
-              <button type="button" class="btn btn-primary my-md-2 m-2"style="min-width: 100px;"><a class="list-group-item list-group-item-action" href="#list-item-3">Chapter 3</a></button>
-              <button type="button" class="btn btn-primary my-md-2 m-2"style="min-width: 100px;"><a class="list-group-item list-group-item-action" href="#list-item-4">Chapter 4</a></button>
-              <button type="button" class="btn btn-primary my-md-2 m-2"style="min-width: 100px;"><a class="list-group-item list-group-item-action" href="#list-item-1">Chapter 5</a></button>
+              <button type="button" id="chapter2" class="btn btn-primary my-md-2 m-2"style="min-width: 100px;"><a class="list-group-item list-group-item-action" href="#list-item-2">Chapter 2</a></button>
+              <button type="button" id="chapter3" class="btn btn-primary my-md-2 m-2"style="min-width: 100px;"><a class="list-group-item list-group-item-action" href="#list-item-3">Chapter 3</a></button>
+              <button type="button" id="chapter4" class="btn btn-primary my-md-2 m-2"style="min-width: 100px;"><a class="list-group-item list-group-item-action" href="#list-item-4">Chapter 4</a></button>
+              <button type="button" id="chapter5" class="btn btn-primary my-md-2 m-2"style="min-width: 100px;"><a class="list-group-item list-group-item-action" href="#list-item-1">Chapter 5</a></button>
               <!-- <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a> -->
-              <button type="button" class="btn btn-primary my-md-2 m-2"style="min-width: 100px;"><a class="list-group-item list-group-item-action" href="#list-item-2">Chapter 6</a></button>
-              <button type="button" class="btn btn-primary my-md-2 m-2"style="min-width: 100px;"><a class="list-group-item list-group-item-action" href="#list-item-3">Chapter 7</a></button>
-              <button type="button" class="btn btn-primary my-md-2 m-2"style="min-width: 100px;"><a class="list-group-item list-group-item-action" href="#list-item-4">Chapter 7</a></button>
+              <button type="button" id="chapter6" class="btn btn-primary my-md-2 m-2"style="min-width: 100px;"><a class="list-group-item list-group-item-action" href="#list-item-2">Chapter 6</a></button>
+              <button type="button" id="chapter7" class="btn btn-primary my-md-2 m-2"style="min-width: 100px;"><a class="list-group-item list-group-item-action" href="#list-item-3">Chapter 7</a></button>
+              <button type="button" id="chapter8" class="btn btn-primary my-md-2 m-2"style="min-width: 100px;"><a class="list-group-item list-group-item-action" href="#list-item-4">Chapter 8</a></button>
+              <button type="button" id="chapter8" class="btn btn-primary my-md-2 m-2"style="min-width: 100px;"><a class="list-group-item list-group-item-action" href="#list-item-4">Chapter 9</a></button>
+              <button type="button" id="chapter8" class="btn btn-primary my-md-2 m-2"style="min-width: 100px;"><a class="list-group-item list-group-item-action" href="#list-item-4">Chapter 9</a></button>
+              <button type="button" id="chapter8" class="btn btn-primary my-md-2 m-2"style="min-width: 105px;"><a class="list-group-item list-group-item-action" href="#list-item-4">Chapter 10</a></button>
+              <button type="button" id="chapter8" class="btn btn-primary my-md-2 m-2"style="min-width: 105px;"><a class="list-group-item list-group-item-action" href="#list-item-4">Chapter 11</a></button>
+              <button type="button" id="chapter8" class="btn btn-primary my-md-2 m-2"style="min-width: 105px;"><a class="list-group-item list-group-item-action" href="#list-item-4">Chapter 12</a></button>
+              <button type="button" id="chapter8" class="btn btn-primary my-md-2 m-2"style="min-width: 105px;"><a class="list-group-item list-group-item-action" href="#list-item-4">Chapter 13</a></button>
+              <button type="button" id="chapter8" class="btn btn-primary my-md-2 m-2"style="min-width: 105px;"><a class="list-group-item list-group-item-action" href="#list-item-4">Chapter 14</a></button>
             </div>
           <div class="col-md-10" >
-              <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-                <h2 class="text-warning text-center" id="list-item-1">Chapter-1</h2>
+              <div>
+                <!-- <h2 class="text-warning text-center" id="listitem1">Chapter-1</h2>
                 <h2 class="text-light text-center bg-secondary" >Real Numbers</h2>
-                <!-- <h4>1.1 INTRODUTION</h4>
+                <h4>1.1 INTRODUTION</h4>
                 <p class="text-primary">"God made the integers. All else is the work of man" - Leopold Kronecker"</p>
                 <p>Life is full of numbers. Imagine the moment you were born. Your parents probably noted
                   the time you were born, your weight, your length and the most important, counted your fingers
                   and toes. From then, numbers accompany you throughout life</p> -->
-                  <!-- <embed src="./Chapters/c1.pdf" type="application/pdf"
-                  width="500px" height="1000vh"> -->
-                  <h2 class="text-warning text-center" id="list-item-2">Chapter-2</h2>
+                  <!-- <embed id="listitem1" src="./Chapters/c1.pdf" type="application/pdf"
+                  width="100%" height="1000vh">
+                  <embed id="listitem2" src="./Chapters/c2.pdf" type="application/pdf"
+                  width="100%" height="1000vh"> -->
+                  <iframe id="textbook"  src="https://drive.google.com/file/d/1NNX5cwLNRdN5AcxBYrmsYMBGNohLL6Nf/preview" style="width: 100%; height:100vh " frameborder="0"></iframe>
+                  <iframe id="listitem1" class="hidden " src="https://drive.google.com/file/d/18FZfi77doqolWJzMMQ14L0Sox7vbjbN4/preview" style="width: 100%; height:100vh " frameborder="0"></iframe>
+                  <iframe id="listitem2" class="hidden " src="https://drive.google.com/file/d/1bZYpmjD5ruVsZlgSdrFLvMQS4b71i0fN/preview" style="width: 100%; height:100vh " frameborder="0"></iframe>
+                  <iframe style="width: 100%; height:100vh " class="hidden " id="listitem3" src="https://drive.google.com/file/d/1vl2NyTrNjLEjQmxyKXGErrWXnEFg_8YK/preview" frameborder="0"></iframe>
+                  <iframe style="width: 100%; height:100vh " class="hidden " id="listitem4" src="https://drive.google.com/file/d/1onb9AVdrV68nVUN_wrCebB8kbWDtIQMB/preview"frameborder="0"></iframe>
+                  <iframe style="width: 100%; height:100vh " class="hidden " id="listitem5" src="" frameborder="0"></iframe>
+                  <iframe style="width: 100%; height:100vh " class="hidden " id="listitem6" src="" frameborder="0"></iframe>
+                  <iframe style="width: 100%; height:100vh " class="hidden " id="listitem7" src="" frameborder="0"></iframe>
+                  <iframe style="width: 100%; height:100vh " class="hidden " id="listitem8" src="" frameborder="0"></iframe>
+                  <iframe style="width: 100%; height:100vh " class="hidden " id="listitem9" src="" frameborder="0"></iframe>
+                  <iframe style="width: 100%; height:100vh " class="hidden " id="listitem10" src="" frameborder="0"></iframe>
+                  <iframe style="width: 100%; height:100vh " class="hidden " id="listitem11" src="" frameborder="0"></iframe>
+                  <iframe style="width: 100%; height:100vh " class="hidden " id="listitem12" src="" frameborder="0"></iframe>
+                  <iframe style="width: 100%; height:100vh " class="hidden " id="listitem13" src="" frameborder="0"></iframe>
+                  <iframe style="width: 100%; height:100vh " class="hidden " id="listitem14" src="" frameborder="0"></iframe>
+                  <!-- <h2 class="text-warning text-center" id="listitem2">Chapter-2</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam modi dolor numquam natus dolorum quae repellat quaerat adipisci sequi at atque, repellendus dignissimos delectus perspiciatis, pariatur explicabo earum ad beatae nam architecto minus reprehenderit vitae. Illo consequatur reiciendis quis officia adipisci. Nam obcaecati eligendi veniam repellat illo, nemo tenetur. Minima.</p> -->
+                <!-- <h2 class="text-warning text-center" id="listitem3">Chapter-3</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam modi dolor numquam natus dolorum quae repellat quaerat adipisci sequi at atque, repellendus dignissimos delectus perspiciatis, pariatur explicabo earum ad beatae nam architecto minus reprehenderit vitae. Illo consequatur reiciendis quis officia adipisci. Nam obcaecati eligendi veniam repellat illo, nemo tenetur. Minima.</p>
-                <h2 class="text-warning text-center" id="list-item-3">Chapter-3</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam modi dolor numquam natus dolorum quae repellat quaerat adipisci sequi at atque, repellendus dignissimos delectus perspiciatis, pariatur explicabo earum ad beatae nam architecto minus reprehenderit vitae. Illo consequatur reiciendis quis officia adipisci. Nam obcaecati eligendi veniam repellat illo, nemo tenetur. Minima.</p>
-                <h2 class="text-warning text-center" id="list-item-4">Chapter-4</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam modi dolor numquam natus dolorum quae repellat quaerat adipisci sequi at atque, repellendus dignissimos delectus perspiciatis, pariatur explicabo earum ad beatae nam architecto minus reprehenderit vitae. Illo consequatur reiciendis quis officia adipisci. Nam obcaecati eligendi veniam repellat illo, nemo tenetur. Minima.</p>
+                <h2 class="text-warning text-center" id="listitem4">Chapter-4</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam modi dolor numquam natus dolorum quae repellat quaerat adipisci sequi at atque, repellendus dignissimos delectus perspiciatis, pariatur explicabo earum ad beatae nam architecto minus reprehenderit vitae. Illo consequatur reiciendis quis officia adipisci. Nam obcaecati eligendi veniam repellat illo, nemo tenetur. Minima.</p> -->
               </div>
             </div>
          </div>
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script >
+      let All=document.getElementById("All")
+      let chapter1=document.getElementById("chapter1")
+      let chapter2=document.getElementById("chapter2")
+      let chapter3=document.getElementById("chapter3")
+      let chapter4=document.getElementById("chapter4")
+      let chapter5=document.getElementById("chapter5")
+      let chapter6=document.getElementById("chapter6")
+      let chapter7=document.getElementById("chapter7")
+      let chapter8=document.getElementById("chapter8")
+      let chapter9=document.getElementById("chapter9")
+      let chapter10=document.getElementById("chapter10")
+      let chapter11=document.getElementById("chapter11")
+      let chapter12=document.getElementById("chapter12")
+      let chapter13=document.getElementById("chapter13")
+      let chapter14=document.getElementById("chapter14")
+
+      let Textbook=document.getElementById("textbook")
+      let listitem1=document.getElementById("listitem1")
+      let listitem2=document.getElementById("listitem2")
+      let listitem3=document.getElementById("listitem3")
+      let listitem4=document.getElementById("listitem4")
+      let listitem5=document.getElementById("listitem5")
+      let listitem6=document.getElementById("listitem6")
+      let listitem7=document.getElementById("listitem7")
+      let listitem8=document.getElementById("listitem8")
+      let listitem9=document.getElementById("listitem9")
+      let listitem10=document.getElementById("listitem10")
+      let listitem11=document.getElementById("listitem11")
+      let listitem12=document.getElementById("listitem12")
+      let listitem13=document.getElementById("listitem13")
+      let listitem14=document.getElementById("listitem14")
+      All.addEventListener("click", function() {
+        Textbook.style.display = "block";
+        listitem1.style.display = "none";
+        listitem2.style.display = "none";
+        listitem3.style.display = "none";
+        listitem4.style.display = "none";
+        listitem5.style.display = "none";
+        listitem6.style.display = "none";
+        listitem7.style.display = "none";
+        listitem8.style.display = "none";
+        listitem9.style.display = "none";
+        listitem10.style.display = "none";
+        listitem11.style.display = "none";
+        listitem12.style.display = "none";
+        listitem13.style.display = "none";
+        listitem14.style.display = "none";
+    });
+      chapter1.addEventListener("click", function() {
+        Textbook.style.display = "none";
+        listitem1.style.display = "block";
+        listitem2.style.display = "none";
+        listitem3.style.display = "none";
+        listitem4.style.display = "none";
+        listitem5.style.display = "none";
+        listitem6.style.display = "none";
+        listitem7.style.display = "none";
+        listitem8.style.display = "none";
+        listitem9.style.display = "none";
+        listitem10.style.display = "none";
+        listitem11.style.display = "none";
+        listitem12.style.display = "none";
+        listitem13.style.display = "none";
+        listitem14.style.display = "none";
+    });
+
+    chapter2.addEventListener("click", function() {
+      Textbook.style.display = "none";
+        listitem1.style.display = "none";
+        listitem2.style.display = "block";
+        listitem3.style.display = "none";
+        listitem4.style.display = "none";
+        listitem5.style.display = "none";
+        listitem6.style.display = "none";
+        listitem7.style.display = "none";
+        listitem8.style.display = "none";
+        listitem9.style.display = "none";
+        listitem10.style.display = "none";
+        listitem11.style.display = "none";
+        listitem12.style.display = "none";
+        listitem13.style.display = "none";
+        listitem14.style.display = "none";
+  });
+  chapter3.addEventListener("click", function() {
+    Textbook.style.display = "none";
+    listitem1.style.display = "none";
+    listitem2.style.display = "none";
+    listitem3.style.display = "block";
+    listitem4.style.display = "none";
+    listitem5.style.display = "none";
+    listitem6.style.display = "none";
+    listitem7.style.display = "none";
+    listitem8.style.display = "none";
+    listitem9.style.display = "none";
+    listitem10.style.display = "none";
+    listitem11.style.display = "none";
+    listitem12.style.display = "none";
+    listitem13.style.display = "none";
+    listitem14.style.display = "none";
+});
+chapter4.addEventListener("click", function() {
+  Textbook.style.display = "none";
+  listitem1.style.display = "none";
+  listitem2.style.display = "none";
+  listitem3.style.display = "none";
+  listitem4.style.display = "block";
+  listitem5.style.display = "none";
+  listitem6.style.display = "none";
+  listitem7.style.display = "none";
+  listitem8.style.display = "none";
+  listitem9.style.display = "none";
+  listitem10.style.display = "none";
+  listitem11.style.display = "none";
+  listitem12.style.display = "none";
+  listitem13.style.display = "none";
+  listitem14.style.display = "none";
+});
+chapter5.addEventListener("click", function() {
+  Textbook.style.display = "none";
+  listitem1.style.display = "none";
+  listitem2.style.display = "none";
+  listitem3.style.display = "none";
+  listitem4.style.display = "none";
+  listitem5.style.display = "block";
+  listitem6.style.display = "none";
+  listitem7.style.display = "none";
+  listitem8.style.display = "none";
+  listitem9.style.display = "none";
+  listitem10.style.display = "none";
+  listitem11.style.display = "none";
+  listitem12.style.display = "none";
+  listitem13.style.display = "none";
+  listitem14.style.display = "none";
+});
+chapter6.addEventListener("click", function() {
+  Textbook.style.display = "none";
+  listitem1.style.display = "none";
+  listitem2.style.display = "none";
+  listitem3.style.display = "none";
+  listitem4.style.display = "none";
+  listitem5.style.display = "none";
+  listitem6.style.display = "block";
+  listitem7.style.display = "none";
+  listitem8.style.display = "none";
+  listitem9.style.display = "none";
+  listitem10.style.display = "none";
+  listitem11.style.display = "none";
+  listitem12.style.display = "none";
+  listitem13.style.display = "none";
+  listitem14.style.display = "none";
+});
+chapter7.addEventListener("click", function() {
+  Textbook.style.display = "none";
+  listitem1.style.display = "none";
+  listitem2.style.display = "none";
+  listitem3.style.display = "none";
+  listitem4.style.display = "none";
+  listitem5.style.display = "none";
+  listitem6.style.display = "none";
+  listitem7.style.display = "block";
+  listitem8.style.display = "none";
+  listitem9.style.display = "none";
+  listitem10.style.display = "none";
+  listitem11.style.display = "none";
+  listitem12.style.display = "none";
+  listitem13.style.display = "none";
+  listitem14.style.display = "none";
+});
+chapter8.addEventListener("click", function() {
+  Textbook.style.display = "none";
+  listitem1.style.display = "none";
+  listitem2.style.display = "none";
+  listitem3.style.display = "none";
+  listitem4.style.display = "none";
+  listitem5.style.display = "none";
+  listitem6.style.display = "none";
+  listitem7.style.display = "none";
+  listitem8.style.display = "block";
+  listitem9.style.display = "none";
+  listitem10.style.display = "none";
+  listitem11.style.display = "none";
+  listitem12.style.display = "none";
+  listitem13.style.display = "none";
+  listitem14.style.display = "none";
+});
+ chapter9.addEventListener("click", function() {
+  Textbook.style.display = "none";
+  listitem1.style.display = "none";
+  listitem2.style.display = "none";
+  listitem3.style.display = "none";
+  listitem4.style.display = "none";
+  listitem5.style.display = "none";
+  listitem6.style.display = "none";
+  listitem7.style.display = "none";
+  listitem8.style.display = "none";
+  listitem9.style.display = "block";
+  listitem10.style.display = "none";
+  listitem11.style.display = "none";
+  listitem12.style.display = "none";
+  listitem13.style.display = "none";
+  listitem14.style.display = "none";
+});
+chapter10.addEventListener("click", function() {
+  Textbook.style.display = "none";
+  listitem1.style.display = "none";
+  listitem2.style.display = "none";
+  listitem3.style.display = "none";
+  listitem4.style.display = "none";
+  listitem5.style.display = "none";
+  listitem6.style.display = "none";
+  listitem7.style.display = "none";
+  listitem8.style.display = "none";
+  listitem9.style.display = "none";
+  listitem10.style.display = "block";
+  listitem11.style.display = "none";
+  listitem12.style.display = "none";
+  listitem13.style.display = "none";
+  listitem14.style.display = "none";
+});
+chapter11.addEventListener("click", function() {
+  Textbook.style.display = "none";
+  listitem1.style.display = "none";
+  listitem2.style.display = "none";
+  listitem3.style.display = "none";
+  listitem4.style.display = "none";
+  listitem5.style.display = "none";
+  listitem6.style.display = "none";
+  listitem7.style.display = "none";
+  listitem8.style.display = "none";
+  listitem9.style.display = "none";
+  listitem10.style.display = "none";
+  listitem11.style.display = "block";
+  listitem12.style.display = "none";
+  listitem13.style.display = "none";
+  listitem14.style.display = "none";
+});
+chapter12.addEventListener("click", function() {
+  Textbook.style.display = "none";
+  listitem1.style.display = "none";
+  listitem2.style.display = "none";
+  listitem3.style.display = "none";
+  listitem4.style.display = "none";
+  listitem5.style.display = "none";
+  listitem6.style.display = "none";
+  listitem7.style.display = "none";
+  listitem8.style.display = "none";
+  listitem9.style.display = "none";
+  listitem10.style.display = "none";
+  listitem11.style.display = "none";
+  listitem12.style.display = "block";
+  listitem13.style.display = "none";
+  listitem14.style.display = "none";
+});
+chapter13.addEventListener("click", function() {
+  Textbook.style.display = "none";
+  listitem1.style.display = "none";
+  listitem2.style.display = "none";
+  listitem3.style.display = "none";
+  listitem4.style.display = "none";
+  listitem5.style.display = "none";
+  listitem6.style.display = "none";
+  listitem7.style.display = "none";
+  listitem8.style.display = "none";
+  listitem9.style.display = "none";
+  listitem10.style.display = "none";
+  listitem11.style.display = "none";
+  listitem12.style.display = "none";
+  listitem13.style.display = "block";
+  listitem14.style.display = "none";
+});
+chapter14.addEventListener("click", function() {
+  Textbook.style.display = "none";
+  listitem1.style.display = "none";
+  listitem2.style.display = "none";
+  listitem3.style.display = "none";
+  listitem4.style.display = "none";
+  listitem5.style.display = "none";
+  listitem6.style.display = "none";
+  listitem7.style.display = "none";
+  listitem8.style.display = "none";
+  listitem9.style.display = "none";
+  listitem10.style.display = "none";
+  listitem11.style.display = "none";
+  listitem12.style.display = "none";
+  listitem13.style.display = "none";
+  listitem14.style.display = "block";
+});
+    </script>
   </body>
 </html>
